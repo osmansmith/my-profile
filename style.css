@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Roboto:wght@300;400&display=swap');
 body{
-    font-family: 'Lato', sans-serif;  
+    font-family: 'Lato', sans-serif;
+    background-color: #1b232f;  
+}
+h1,h2{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,a{
+    color: #DDE6ED;
+}
+p{
+    color:#9DB2BF;
 }
 a {
     text-decoration:none;
@@ -17,15 +28,24 @@ a:hover {
 }
 
 .card-white{
-    background: white ;
+    background: #283d4d ;
     padding: 40px;
-    box-shadow: 0px 10px 35px rgba(0, 0, 0, 0.2);
+    transition: box-shadow ease-in 0.3s;
     border-radius: 4px;
     margin: 20px 0px;
     text-align:center;
 }
+.card-white:hover{
+    box-shadow: 0px 10px 20px rgba(157,178,191, 0.1);
+    
+}
 .img-circle{
     border-radius:50%;
+    transition:border-radius,width ease 0.5s;
+}
+.img-circle:hover{
+    border-radius:0;
+    width:300px;
 }
 .btn-purple{
     background-color: #9b70f2;
